@@ -16,6 +16,6 @@ export class UsuarioService {
 
     create(dados: Partial<Usuario>): Promise<Usuario> {
         const novoUsuario = this.usuarioRepository.create(dados);
-        return this.usuarioRepository.save(novoUsuario;)
+        return this.usuarioRepository.save(novoUsuario);
     }
 }
