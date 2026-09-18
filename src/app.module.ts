@@ -4,6 +4,8 @@ import { AppService } from './app.service.js';
 import { UsuariosModule } from './usuario/usuario.module.js';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProdutoModule } from './produto/produto.module.js';
+import { TutorialModule } from './tutorial/tutorial.module.js';
+import { FavoritosTutorialModule } from './favoritos_tutorial/favoritos_tutorial.module.js';
 
 
 @Module({
@@ -22,6 +24,10 @@ import { ProdutoModule } from './produto/produto.module.js';
   UsuariosModule,
 
   ProdutoModule,
+
+  TutorialModule,
+
+  FavoritosTutorialModule,
 ],
 
   controllers: [AppController],

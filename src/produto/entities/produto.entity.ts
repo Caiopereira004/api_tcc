@@ -1,6 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, JoinColumn, ManyToOne } from 'typeorm';
 
-@Entity('produto'){
+@Entity('produto')
 export class Produto {
     @PrimaryGeneratedColumn()
     id: number;
@@ -16,11 +16,13 @@ export class Produto {
 
     @Column()
     categoria_produto_id: number;
+    @ManyToOne(() => Produto)
+    @JoinColumn({name: 'categoria_produto_id'})
+    produto: Produto
 
     @Column()
     marca: string;
 
     @Column()
     quantidade: number;
-}
 }
