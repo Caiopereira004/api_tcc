@@ -6,6 +6,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProdutoModule } from './produto/produto.module.js';
 import { TutorialModule } from './tutorial/tutorial.module.js';
 import { FavoritosTutorialModule } from './favoritos_tutorial/favoritos_tutorial.module.js';
+import { CategoriaProdutoModule } from './categoria_produto/categoria_produto.module.js';
+import { CategoriaTutorialModule } from './categoria_tutorial/categoria_tutorial.module.js';
 
 
 @Module({
@@ -28,6 +30,10 @@ import { FavoritosTutorialModule } from './favoritos_tutorial/favoritos_tutorial
   TutorialModule,
 
   FavoritosTutorialModule,
+
+  CategoriaProdutoModule,
+
+  CategoriaTutorialModule,
 ],
 
   controllers: [AppController],
