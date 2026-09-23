@@ -8,6 +8,11 @@ import { TutorialModule } from './tutorial/tutorial.module.js';
 import { FavoritosTutorialModule } from './favoritos_tutorial/favoritos_tutorial.module.js';
 import { CategoriaProdutoModule } from './categoria_produto/categoria_produto.module.js';
 import { CategoriaTutorialModule } from './categoria_tutorial/categoria_tutorial.module.js';
+import { CarrinhoModule } from './carrinho/carrinho.module.js';
+import { PedidoModule } from './pedido/pedido.module.js';
+import { PedidoItemModule } from './pedido_item/pedido_item.module.js';
+import { CarrinhoItemModule } from './carrinho_item/carrinho_item.module.js';
+import { CartaoModule } from './cartao/cartao.module.js';
 
 
 @Module({
@@ -34,6 +39,16 @@ import { CategoriaTutorialModule } from './categoria_tutorial/categoria_tutorial
   CategoriaProdutoModule,
 
   CategoriaTutorialModule,
+
+  CarrinhoModule,
+
+  PedidoModule,
+
+  PedidoItemModule,
+
+  CarrinhoItemModule,
+
+  CartaoModule,
 ],
 
   controllers: [AppController],

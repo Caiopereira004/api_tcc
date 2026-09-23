@@ -9,7 +9,7 @@ import { FavoritosTutorial } from './entities/favoritos_tutorial.entity.js';
 export class FavoritosTutorialService {
   constructor(
     @InjectRepository(FavoritosTutorial)
-    private readonly favoritos_tutorialRepository: Repository <FavoritosTutorial>,
+    private readonly favoritos_tutorialRepository: Repository<FavoritosTutorial>,
   ){}
 
   create(createFavoritosTutorialDto: CreateFavoritosTutorialDto) {
